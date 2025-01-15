@@ -1,0 +1,161 @@
+/* --------------------------------------------------------------------------ANIS_PAGE_D'ACCUEILLE------------------------------------------------------------------------------------ */
+#P1_Index{
+    background-image:url("Image/tf2-background.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+}
+
+header#P1_header{
+    /* background-color: #333; */
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+body#P1_Index div{
+    display: inline-block ;
+}
+
+body#P1_Index div.P1_gauche{
+    /* background-color: #ddd; */
+    width: 40%;
+    padding-right: 8%;
+    align-items: center ;
+}
+body#P1_Index div.P1_droite{
+    /* background-color:white ; */
+    padding-left: 8%;
+    width: 40%;
+}
+body#P1_Index div.P1_gauche img{
+    display:grid;
+    margin-left: 31%;
+    margin-top: 10px;
+}
+
+body#P1_Index div.P1_droite img{
+    display:grid;
+    margin-left: 42%;
+    margin-top: 10px;
+}
+
+body#P1_Index div.P1_bouton{
+    position: absolute;
+    z-index: 1;
+    left: 43%;
+    top: 80%;
+}
+div.instal div.steam a {
+    text-decoration:none
+}
+div.instal div.steam{
+    position: absolute;
+    z-index: 1;
+    left: 40%;
+    top: 60%;
+    background: linear-gradient(to right, #0077ff, #00ffff);
+    font-size: 30px;
+    border-radius: 10px; /* Arrondir les coins */
+    box-shadow: 0 12px 12px rgba(0, 0, 0.4, 0.2); /* Ajouter une ombre */
+    padding: 10px;
+}
+
+
+/*--------------------------------------------------------------Page 2---------------------------------------------------------------------------*/
+#page2_jeuxpage{
+    background-color: chocolate;
+    margin: 0;
+    padding: 0;
+}
+
+.page2_navbar {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #333;
+    margin-top: 0;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+.page2_navbar * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+}
+
+.page2_navbar li {
+    padding-top: 10px;
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+}
+
+.page2_navbar a {
+    padding: 0.3em 0;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.page2_navbar li:hover a{
+    color: white;
+}
+
+/* Contenu principal */
+.page2_content {
+    display: grid;
+    grid-template-areas:
+        "section1 section2 section3"
+        "section1 section4 section3";
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.page2_content > div {
+    box-shadow: 1.8px 3px 1.5px rgba(77, 42, 42, 0.205), 14px 24px 12px rgba(0, 0, 0, 0.41);
+}
+
+.page2_box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Assignation des zones de la grille */
+#page2_section1 {
+    grid-area: section1;
+    height: 470px;
+}
+
+#page2_section2 {
+    grid-area: section2;
+}
+
+#page2_section3 {
+    grid-area: section3;
+}
+
+#page2_section4 {
+    grid-area: section4;
+}
+
+/* Pied de page */
+.page2_footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
