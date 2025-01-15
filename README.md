@@ -2,7 +2,7 @@
 
 ---
 
-Cette consigne décrit un projet où vous devez créer une version web du jeu classique Hangman en utilisant le langage de programmation Go. Voici une explication détaillée des exigences pour votre dépôt **hangman-web** :
+Vous devez créer une version web du jeu classique Hangman en utilisant le langage de programmation Go. Voici une explication détaillée des exigences pour votre dépôt **hangman-web** :
 
 1. **Objectif** :  
    - Créez une application web pour le jeu classique Hangman.  
